@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --primary: #18BBFF;
+    --secondary: #FF2DD8;
+    --tertiary: #555555;
+    --light: #DFE4FD;
+    --dark: #011A41;
+}
+
+/*-------------*/
+
+.span-login {
+    font-size: 50px;
+    margin: 10px 0 0 0;
+    position: relative;
+    top: 10px;
+    letter-spacing: 3px;
+    color: var(--primary);
+}
+body{
+    background-color: var(--dark);
+}
+
+
