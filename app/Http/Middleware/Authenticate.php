@@ -17,9 +17,9 @@ class Authenticate extends Middleware
     {
         if (!$request->expectsJson()) {
             if ($request->is('leverage-admin/*')) {
-                return route('admin.login-page');
+                return route('admin-panel.login');
             } else if ($request->is('leverage-admin')) {
-                return route('admin.login');
+                return route('admin-panel.login');
             } else {
                 return route('login');
             }

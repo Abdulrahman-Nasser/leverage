@@ -19,7 +19,12 @@ class adminController extends Controller
         return view('admin-board.index');
     }
 
-    public function getLogin()
+    // public function getLogin()
+    // {
+    //     return view('admin-board.admin-login');
+    // }
+
+    public function login()
     {
         return view('admin-board.login');
     }

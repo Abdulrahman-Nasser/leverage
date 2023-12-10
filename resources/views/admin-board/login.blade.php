@@ -10,8 +10,9 @@
             <div class="row justify-content-md-center">
                 <div class="card-wrapper col-12 col-md-4 mt-5">
                     <div class="brand text-center mb-3">
-                        <a href="{{ route('admin.login') }}"><img src="{{ asset('assets/img/logo.jpg') }}" width="60"></a>
-                        <span class="span-login">LEVERAGE</span>
+                        <a href="{{ route('admin-panel.login') }}"><img src="{{ asset('assets/img/logo.jpg') }}"
+                                width="60"></a>
+                        <span class="span-login">LEVERAGE </span>
                     </div>
                     <div class="card">
                         <div class="card-body">
@@ -29,13 +30,14 @@
                                 </div>
                             @endif
 
-                            <form method="POST" action="{{ route('loginAdmin') }}" >
+                            <form method="POST" action="{{ route('loginAdmin') }}">
 
                                 @csrf
 
                                 <div class="form-group">
                                     <label for="email">E-Mail Address</label>
-                                    <input  type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" >
+                                    <input type="email" class="form-control @error('email') is-invalid @enderror"
+                                        name="email" value="{{ old('email') }}">
 
                                     @error('email')
                                         <span class="invalid-feedback" role="alert">
@@ -47,7 +49,8 @@
 
                                 <div class="form-group">
                                     <label for="password">Password </label>
-                                    <input id="password" type="password" class="form-control @error('password') is-invalid @enderror " name="password" >
+                                    <input id="password" type="password"
+                                        class="form-control @error('password') is-invalid @enderror " name="password">
 
                                     @error('password')
                                         <span class="invalid-feedback" role="alert">
@@ -70,7 +73,7 @@
                     <footer class="footer mt-3">
                         <div class="container-fluid">
                             <div class="footer-content text-center small">
-                                <span class="text-muted">&copy; 2019 Graindashboard. All Rights Reserved.</span>
+                                <span class="text-muted">&copy; 2023 Leverage. All Rights Reserved.</span>
                             </div>
                         </div>
                     </footer>

@@ -12,7 +12,8 @@ Auth::routes();
 
 // to get login page for admin
 Route::middleware('guest:admin')->group(function () {
-    Route::get('/getlogin', [adminController::class, 'getLogin'])->name('admin.login-page');
+    // Route::get('/geLoginPage', [adminController::class, 'login'])->name('admin.login-page');
+    Route::get('/admin-login' , [adminController::class , 'login'])->name('admin-panel.login');
     Route::post('/login-admin', [adminController::class, 'login_admin'])->name('loginAdmin');
 });
 

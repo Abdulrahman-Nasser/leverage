@@ -1,6 +1,5 @@
 @extends('admin-board.layouts.admin-layout')
 @section('title','Admin | Home')
-@include('notify::components.notify')
 
 
 @section('content')
@@ -14,6 +13,7 @@
         @include('admin-board.asside.asside')
 
         <div class="content">
+
             <div class="px-md-4">
 
                 <div class="mb-3 mb-md-4 d-flex justify-content-between">
